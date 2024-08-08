@@ -1,0 +1,14 @@
+{
+    "locations": [
+      { "id": 1, "name": "Marina Plaza 36th Floor" },
+      { "id": 2, "name": "Marina Plaza 26th Floor" },
+      { "id": 3, "name": "Chicago" },
+      { "id": 4, "name": "Houston" },
+      { "id": 5, "name": "Phoenix" }
+    ],
+    "users": [
+      { "username": "user1", "pin": "1234" },
+      { "username": "user2", "pin": "5678" }
+    ]
+  }
+  

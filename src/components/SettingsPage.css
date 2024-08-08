@@ -1,0 +1,98 @@
+/* Settings Page Layout */
+.settings-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; /* Full height to center content vertically */
+  padding: 80px 20px 20px; /* Top padding to avoid content being hidden behind fixed header */
+  background-color: #002855; /* Ensure visibility on your page */
+}
+
+.settings-page .content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.settings-page h2 {
+  margin-bottom: 20px;
+  font-size: 24px; /* Set the font size same as the combo box text */
+  color: white;
+}
+
+.pin-input {
+  padding: 20px; /* Increase padding for the input field */
+  font-size: 24px; /* Increase font size for better readability */
+  width: 100%;
+  max-width: 400px; /* Limit width of input */
+  box-sizing: border-box;
+  margin-bottom: 30px; /* Space between input and bottom */
+  border: 2px solid #fff; /* Add border for visibility */
+  border-radius: 5px; /* Optional: rounded corners */
+  background-color: #fff; /* Optional: background color for input field */
+}
+
+.location-selection {
+  margin-top: 20px;
+}
+
+.custom-combobox {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  max-width: 400px ;
+
+}
+
+.location-dropdown {
+  width: 100%;
+  padding: 10px;
+  background-color: white;
+  color: black;
+  border: 1px solid #ccc;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  border-radius: 4px;
+  position: relative;
+  font-size: 15px; /* Ensure this matches the h2 font size */
+}
+.location-dropdown:focus {
+  outline: none;
+  border-color: #007bff;
+}
+
+.custom-combobox::after {
+  content: '▼';
+  font-size: 25px;
+  color: white;
+  background-color: #1559a1eb;
+  padding: 5px;
+  position: absolute;
+  right: 0px;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+}
+
+
+.save-button {
+  margin-top: 20px; /* Ensure there's space between combobox and button */
+  margin-left: 50px; /* Adjust this value to move the button to the right */
+  padding: 10px 20px;
+  background-color: #ecf1f5;
+  color: rgb(0, 0, 0);
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  display: block; /* Ensure button is block level to appear below combobox */
+  width: 70%; /* Make the button width match the combobox */
+  max-width: 400px;
+}
+
+.save-button:hover {
+  background-color: #0056b3;
+  color: white;
+}

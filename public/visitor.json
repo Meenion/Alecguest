@@ -1,0 +1,26 @@
+[
+  {
+    "name": "John Doe",
+    "phone": "123-456-7890",
+    "company": "Acme Corp",
+    "email": "john.doe@example.com"
+  },
+  {
+    "name": "Meena",
+    "phone": "1234567",
+    "company": "AM",
+    "email": "meena@gmail.com"
+  },
+  {
+    "name": "John ",
+    "phone": "12345678",
+    "company": "AD",
+    "email": "john@gmail.com"
+  },
+  {
+    "name": "me",
+    "phone": "283623470",
+    "company": "AK",
+    "email": "me@gmail.com"
+  }
+]

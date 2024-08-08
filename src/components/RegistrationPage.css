@@ -1,0 +1,101 @@
+ .registration-page {
+    text-align: center;
+    padding: 20px;
+    background-color: #002855;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.logo {
+    height: 40px;
+    margin-left: 20px;
+}
+
+.content {
+    background-color: #002855;
+    color: white;
+    text-align: center;
+}
+
+h2 {
+    margin-bottom: 30px;
+
+}
+
+h3{
+    
+        margin-bottom: 30px;
+        position: absolute;
+        top: 100px;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 40px;
+        font-weight: 90;
+    
+
+}
+.registration-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: -200px;
+}
+
+
+.form-row {
+    display: flex;
+    justify-content: space-between;
+    width: 600px;
+    margin-bottom: 20px;
+    gap: 400px; /* Add space between the input fields */
+}
+
+
+.registration-form label {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 60px;
+    margin-left: -140px; /* Added margin-bottom to create space between the label and input */
+}
+
+.registration-form input {
+    margin-top: 10px;
+    padding: 10px;
+    font-size: 16px;
+    width: 290px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-bottom: 0px; /* Added margin-bottom to create space between inputs */
+    margin-left: 0px
+}
+
+.registration-form button {
+    margin-top: 20px;
+    padding: 15px 40px;
+    font-size: 18px;
+    background-color: #FFFFFF;
+    color: #8b95a1;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.registration-form button:hover {
+    background-color: #f2f2f2;
+}
