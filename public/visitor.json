@@ -4,6 +4,10 @@
     "phone": "123-456-7890",
     "company": "Acme Corp",
     "email": "john.doe@example.com"
+    "alecuser": "Jessica"
+    "reason of visit": "meeting"
+    "no. of guests" : "3"
+    "guest names" : "hena, mea, lory"
   },
   {
     "name": "Meena",
@@ -22,5 +26,11 @@
     "phone": "283623470",
     "company": "AK",
     "email": "me@gmail.com"
+  },
+  {
+    "name": "Meenaa",
+    "phone": "7619762093",
+    "company": "J",
+    "email": "jay@gmail.com"
   }
 ]

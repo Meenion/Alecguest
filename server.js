@@ -40,14 +40,47 @@ app.post('/save-registration', (req, res) => {
                 return res.status(500).json({ message: 'Failed to save data' });
             }
 
-            console.log('Visitor data saved successfully!');
-            res.status(200).json({ message: 'Data saved successfully!' });
+            res.status(200).json({ message: 'Registration successful' });
+        });
+    });
+});
+
+// Endpoint to save check-in data
+app.post('/save-checkin', (req, res) => {
+    const checkInData = req.body;
+
+    // Path to the checkin.json file
+    const checkInFilePath = path.join(__dirname, 'public', 'checkin.json');
+
+    // Read the existing data in checkin.json
+    fs.readFile(checkInFilePath, 'utf8', (err, data) => {
+        if (err) {
+            console.error('Error reading checkin.json:', err);
+            return res.status(500).json({ message: 'Failed to read data' });
+        }
+
+        let checkIns = [];
+        if (data) {
+            checkIns = JSON.parse(data);
+        }
+
+        // Add the new check-in data
+        checkIns.push(checkInData);
+
+        // Write the updated data back to checkin.json
+        fs.writeFile(checkInFilePath, JSON.stringify(checkIns, null, 2), (err) => {
+            if (err) {
+                console.error('Error writing to checkin.json:', err);
+                return res.status(500).json({ message: 'Failed to save data' });
+            }
+
+            res.status(200).json({ message: 'Check-in successful' });
         });
     });
 });
 
 // Start the server
-const PORT = 5001;
+const PORT = process.env.PORT || 5001;
 app.listen(PORT, () => {
-    console.log(`Server is running on http://localhost:${PORT}`);
+    console.log(`Server is running on port ${PORT}`);
 });

@@ -1,14 +1,23 @@
 {
-    "locations": [
-      { "id": 1, "name": "Marina Plaza 36th Floor" },
-      { "id": 2, "name": "Marina Plaza 26th Floor" },
-      { "id": 3, "name": "Chicago" },
-      { "id": 4, "name": "Houston" },
-      { "id": 5, "name": "Phoenix" }
-    ],
-    "users": [
-      { "username": "user1", "pin": "1234" },
-      { "username": "user2", "pin": "5678" }
-    ]
-  }
-  
+  "locations": [
+    { "id": 1, "name": "Marina Plaza 36th Floor" },
+    { "id": 2, "name": "Marina Plaza 26th Floor" },
+    { "id": 3, "name": "Chicago" },
+    { "id": 4, "name": "Houston" },
+    { "id": 5, "name": "Phoenix" }
+  ],
+  "users": [
+    { "username": "user1", "pin": "1234" },
+    { "username": "user2", "pin": "5678" },
+    { "username": "alecuser1", "name": "John Doe", "email": "johndoe@example.com" },
+    { "username": "alecuser2", "name": "Jane Smith", "email": "janesmith@example.com" },
+    { "username": "alecuser3", "name": "Robert Brown", "email": "robertbrown@example.com" },
+    { "username": "alecuser4", "name": "Emily Davis", "email": "emilydavis@example.com" },
+    { "username": "alecuser5", "name": "Michael Wilson", "email": "michaelwilson@example.com" },
+    { "username": "alecuser6", "name": "Jessica Johnson", "email": "jessicajohnson@example.com" },
+    { "username": "alecuser7", "name": "William Taylor", "email": "williamtaylor@example.com" },
+    { "username": "alecuser8", "name": "Sophia Martinez", "email": "sophiamartinez@example.com" },
+    { "username": "alecuser9", "name": "David Anderson", "email": "davidanderson@example.com" },
+    { "username": "alecuser10", "name": "Olivia Thompson", "email": "oliviathompson@example.com" }
+  ]
+}

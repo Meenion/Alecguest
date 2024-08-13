@@ -2,12 +2,13 @@ import React, { useState, useEffect } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCog } from '@fortawesome/free-solid-svg-icons';
 import '../index.css';
-import ReturningVisitorSelection from './ReturningVisitorSelection'; // Import the new component
+import ReturningVisitorSelection from './ReturningVisitorSelection';
 
 const WelcomeScreen = ({ setScreen }) => {
   const [currentDate, setCurrentDate] = useState(new Date());
   const [location, setLocation] = useState('');
   const [isLocationSaved, setIsLocationSaved] = useState(false);
+  const [screenMode, setScreenMode] = useState('initial'); // 'initial', 'visitorSelection', 'welcome'
 
   useEffect(() => {
     const timer = setInterval(() => {
@@ -22,6 +23,7 @@ const WelcomeScreen = ({ setScreen }) => {
     if (savedLocation) {
       setLocation(savedLocation);
       setIsLocationSaved(true);
+      setScreenMode('visitorSelection'); // Default to visitor selection mode if location is saved
     }
   }, []);
 
@@ -38,10 +40,10 @@ const WelcomeScreen = ({ setScreen }) => {
   };
 
   const formatDate = (date) => {
-    const options = { 
-      weekday: 'long', year: 'numeric', month: 'short', 
-      day: 'numeric', hour: 'numeric', minute: 'numeric', 
-      second: 'numeric' 
+    const options = {
+      weekday: 'long', year: 'numeric', month: 'short',
+      day: 'numeric', hour: 'numeric', minute: 'numeric',
+      second: 'numeric'
     };
     return date.toLocaleDateString(undefined, options);
   };
@@ -57,9 +59,11 @@ const WelcomeScreen = ({ setScreen }) => {
       </header>
 
       <div className="content">
-        {!isLocationSaved ? (
+        {screenMode === 'initial' && (
           <p>Please click on the settings icon to configure device location.</p>
-        ) : (
+        )}
+
+        {screenMode === 'visitorSelection' && (
           <>
             <h2 className="welcome-text">Welcome to ALEC</h2>
             <div className="visitor-buttons">
@@ -72,7 +76,15 @@ const WelcomeScreen = ({ setScreen }) => {
             </div>
           </>
         )}
+
+        {screenMode === 'welcome' && (
+          <>
+            <h2 className="welcome-text">Welcome to ALEC</h2>
+            <p>Thank you for checking in!</p>
+          </>
+        )}
       </div>
+
       <footer className="footer">
         <div className="left">
           <p>{formatDate(currentDate)}</p>

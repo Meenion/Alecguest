@@ -1,0 +1,83 @@
+.checkin-container {
+    text-align: center;
+    padding: 20px;
+    background-color: #002855; /* Dark blue background similar to registration page */
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white; /* White text for contrast */
+}
+
+.header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.logo {
+    height: 40px; /* Adjust as needed */
+    margin-left: 20px;
+}
+
+h1 {
+    margin-bottom: 30px;
+    font-size: 40px; /* Match font size to registration page */
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+    width: 100%;
+    max-width: 600px; /* Max width for consistent form size */
+}
+
+.form-group label {
+    font-size: 16px;
+    color: white; /* White text for labels */
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.form-group input, 
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: #ffffff; /* White background for input fields */
+    color: #000000; /* Black text for input fields */
+}
+
+.form-group textarea {
+    height: 100px; /* Adjust height for textarea */
+    resize: vertical; /* Allow vertical resizing */
+}
+
+.form-group input:focus, 
+.form-group textarea:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px #0056b3; /* Blue border on focus */
+}
+
+.checkin-button {
+    padding: 15px 40px;
+    font-size: 18px;
+    background-color: #ffffff; /* White background for button */
+    color: #8b95a1; /* Text color */
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.checkin-button:hover {
+    background-color: #f2f2f2; /* Slightly darker on hover */
+}
