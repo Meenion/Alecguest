@@ -1,3 +1,8 @@
+# ALEC Guest Page
+
+This project serves as a digital visitor book for ALEC, designed to streamline and manage visitor permits and entries across various office locations efficiently.
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
